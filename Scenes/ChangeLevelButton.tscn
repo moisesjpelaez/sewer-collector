@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/ChangeLevelButton.gd" type="Script" id=1]
+
+[node name="ChangeLevelButton" type="Button"]
+margin_right = 44.0
+margin_bottom = 18.0
+size_flags_horizontal = 3
+text = "play"
+script = ExtResource( 1 )
+[connection signal="button_up" from="." to="." method="_on_ChangeLevelButton_button_up"]
