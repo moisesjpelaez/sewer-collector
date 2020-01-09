@@ -3,7 +3,6 @@ class_name Player
 
 export (int) var acceleration : int = 512
 export (int) var max_speed : int = 64
-export (float) var friction : float = 0.25
 export (float) var ground_friction : float = 0.25
 export (float) var ladder_friction : float = 1
 export (int) var gravity : int = 256
@@ -12,6 +11,7 @@ export (int) var jump_impulse : int = 128
 var motion : Vector2 = Vector2.ZERO
 var floor_normal : Vector2 = Vector2.UP
 var is_climbing : bool = false
+var friction : float = ground_friction
 
 onready var sprite : Sprite = $Sprite
 onready var animator : AnimationPlayer = $AnimationPlayer
